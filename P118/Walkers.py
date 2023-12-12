@@ -22,7 +22,7 @@ while True:
     for (x,y,w,h) in bodies:
         cv2.rectangle(frame,(x,y), (x+w,y+h), (0,0,255), 2)
         save = frame[y:y+h,x:x+w]
-        cv2.imwrite("Sahishnu.png", save)
+
     cv2.imshow("Web cam", frame)
 
     if cv2.waitKey(1) == 32: #32 is the Space Key
